@@ -1,0 +1,136 @@
+.main {
+  height: 100vh;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 145, 255) 10%,
+      rgb(145, 233, 255) 90%
+    );
+    color: white;
+    padding: 10px 0;
+    .left {
+      padding: 15px 25px;
+      text-align: center;
+      flex-grow: 1;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
+    .right {
+      margin: auto 0;
+      flex-grow: 16;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px;
+      color: rgb(13, 3, 103);
+    }
+  }
+
+  .body {
+    display: flex;
+    box-sizing: border-box;
+
+    .left {
+      height: 93vh;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient(
+        to right,
+        rgb(98, 177, 237) 10%,
+        rgb(163, 203, 212) 90%
+      );
+
+      .left-title {
+        display: flex;
+        border: 1px solid #000;
+        background: rgba(238, 235, 235, 0.811);
+
+        padding: 10px;
+        box-sizing: border-box;
+        .avt {
+          align-self: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+        .info {
+          padding-left: 5px;
+          .name {
+            font-weight: bold;
+            font-size: 14px;
+          }
+          .fa-circle {
+            color: green;
+            font-size: 10px;
+            padding: 5px 5px 5px 0;
+          }
+        }
+      }
+
+      .body-left-btn {
+        border-top: 1px solid #000;
+        padding: 15px 10px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+
+        background-color: rgba(0, 0, 0, 0.212);
+
+        &:hover,
+        &.active {
+          cursor: pointer;
+          color: rgb(0, 0, 0);
+          background-color: rgb(176, 178, 180);
+        }
+      }
+
+      .overview {
+        margin-top: 10px;
+      }
+
+      .btn-acount {
+        border-bottom: 1px solid black;
+        .btn-left {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .dropdown-menu {
+          display: none;
+
+          li {
+            color: rgb(2, 2, 203);
+            padding: 5px;
+            list-style: none;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(0, 145, 255);
+              color: white;
+            }
+          }
+        }
+
+        &:hover .fa-angle-left {
+          transition: all 0.5s;
+          transform: rotateZ(-90deg);
+        }
+        &:hover .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+
+    .right {
+      background-image: linear-gradient(
+        to right bottom,
+        rgb(175, 208, 241) 10%,
+        rgb(106, 204, 228) 90%
+      );
+
+      border: 1px solid #370fffda;
+      flex-grow: 6;
+    }
+  }
+}

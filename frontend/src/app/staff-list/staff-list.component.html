@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <h1>Staff Table</h1>
+  <table class="table">
+    <thead>
+      <h1 *ngIf="!isResultLoaded">Loading.................</h1>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">position</th>
+        <th scope="col">salary</th>
+        <th scope="col">hire_date</th>
+        <th scope="col">date</th>
+        <th scope="col">address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let StudentItem of StudentArray">
+        <td>{{ StudentItem.id }}</td>
+        <td>{{ StudentItem.name }}</td>
+        <td>{{ StudentItem.position }}</td>
+        <td>{{ StudentItem.salary }}</td>
+        <td>{{ StudentItem.hire_date }}</td>
+        <td>{{ StudentItem.date }}</td>
+        <td>{{ StudentItem.address }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

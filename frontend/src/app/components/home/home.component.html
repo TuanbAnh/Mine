@@ -1,0 +1,74 @@
+<div class="main">
+  <div class="header">
+    <div class="left">QLNS</div>
+    <div class="right">
+      <i class="fa-solid fa-bars"></i
+      ><strong><i class="fa-solid fa-user"></i> Admin</strong>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="left">
+      <div class="left-title">
+        <img src="/assets/home/avt-girl.jpg" alt="" class="avt" />
+        <div class="info">
+          <div class="name">Hoang Bao Tram</div>
+          <i class="fa-solid fa-circle"></i>Nhan vien
+        </div>
+      </div>
+
+      <div
+        class="body-left-btn overview"
+        [routerLink]="['/home/overview']"
+        routerLinkActive="active"
+      >
+        Overview
+      </div>
+      <div
+        [routerLink]="['/home/staff']"
+        class="body-left-btn staff"
+        routerLinkActive="active"
+      >
+        Staff
+      </div>
+      <div
+        [routerLink]="['/home/info-staff']"
+        class="body-left-btn staff-info"
+        routerLinkActive="active"
+      >
+        Staff Info
+      </div>
+      <div
+        [routerLink]="['/home/acount-info']"
+        class="body-left-btn acount info"
+        routerLinkActive="active"
+      >
+        Account Info
+      </div>
+      <div
+        [routerLink]="['/home/change-pass']"
+        class="body-left-btn change-pass"
+        routerLinkActive="active"
+      >
+        Change Password
+      </div>
+
+      <div class="body-left-btn btn-acount">
+        <div class="btn-left">
+          New
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+
+        <ul class="dropdown-menu">
+          <li [routerLink]="['/home/staff-list']">List Employee</li>
+          <li [routerLink]="['/home/acount-info']">Overview</li>
+          <li [routerLink]="['/']">Logout</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  border: 1px solid #e00b0b;
+  position: relative;
+  // background-color: #d0cfcf;
+  background-image: url(/assets/pass/background-pass.jpg);
+  background-size: cover;
+
+  .table-login {
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .admin {
+      text-align: center;
+      font-weight: bold;
+      font-size: 35px;
+      padding-bottom: 10px;
+      color: white;
+
+      span {
+        font-weight: normal;
+        font-size: 25px;
+      }
+    }
+
+    .login {
+      background-color: rgb(255, 255, 255);
+      padding: 10px 15px;
+      .title {
+        text-align: center;
+        padding-bottom: 15px;
+      }
+      .input {
+        display: flex;
+        height: 70px;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .account {
+          padding: 5px;
+          padding-left: 20px;
+          background: url(/assets/login/name.png) no-repeat left;
+          background-size: 14px;
+        }
+        .pass {
+          padding: 5px;
+          padding-left: 20px;
+          background: url(/assets/login/key.png) no-repeat left;
+          background-size: 14px;
+        }
+      }
+      button {
+        margin-top: 10px;
+        padding: 5px 10px;
+
+        &:hover {
+          background-color: #b2b2b2;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

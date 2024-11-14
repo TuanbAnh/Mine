@@ -1,0 +1,74 @@
+.container {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  background-color: #c7d5de;
+  .card {
+    border: none;
+    display: flex;
+    background-color: rgba(162, 168, 181, 0.007);
+    .label {
+      .form-group {
+        label {
+          color: blue;
+          font-weight: 500;
+          font-size: 18px;
+          padding-bottom: 5px;
+        }
+
+        padding: 15px;
+        border-top: 1px solid blue;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .form-control {
+          display: inline;
+          width: 400px;
+        }
+      }
+      .btn {
+        padding: 5px 20px;
+        font-weight: bold;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgb(107, 150, 251);
+        &:hover {
+          background-color: rgba(30, 110, 224, 0.868);
+        }
+      }
+    }
+  }
+
+  .mt-5 {
+    .table {
+      tr {
+        th {
+          min-width: 150px;
+          background-color: rgb(161, 203, 250);
+        }
+      }
+      .tb {
+        td {
+          background-color: rgb(212, 224, 237);
+          button {
+            padding: 5px 15px;
+            background-color: rgb(93, 184, 248);
+            margin-left: 25px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            border: 1px solid #ffffff;
+
+            &:hover {
+              background-color: rgb(67, 44, 246);
+            }
+          }
+        }
+      }
+    }
+  }
+}

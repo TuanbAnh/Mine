@@ -1,0 +1,91 @@
+.main {
+  height: 89vh;
+  .header {
+    border-bottom: 3px solid #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px 10px;
+    background-color: #474e53;
+    color: rgba(244, 244, 244, 0.979);
+    .left {
+      strong {
+        font-size: 25px;
+        padding-right: 10px;
+      }
+    }
+
+    .right {
+      display: flex;
+      padding: 5px 10px;
+
+      .overview {
+        padding-right: 10px;
+        .fa-house {
+          padding-right: 10px;
+        }
+      }
+      .statistical {
+        color: rgba(237, 242, 236, 0.834);
+      }
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 10px 30px;
+    .ov {
+      background-image: linear-gradient(
+        to right,
+        rgb(0, 131, 231) 10%,
+        rgb(138, 195, 209) 90%
+      );
+      width: 28%;
+      height: 150px;
+      min-width: 150px;
+      border: 1px solid #000;
+      background-color: #3270e4;
+      border-radius: 5px;
+      cursor: pointer;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgb(2, 86, 150) 10%,
+          rgb(61, 175, 204) 90%
+        );
+      }
+
+      .head {
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        .left {
+          strong {
+            font-size: 30px;
+            padding: 10px;
+          }
+          p {
+            margin: 0;
+          }
+        }
+        .right {
+          .fa-solid {
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+      .foter {
+        text-align: center;
+        background-color: #293772;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.main {
+  height: 89vh;
+  padding-bottom: 20px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: hsl(238, 59%, 39%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .body {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      background-color: #f3f2f2;
+      margin-right: 30px;
+      width: 30%;
+      .profile {
+        padding: 15px 0;
+        text-align: center;
+        .avt {
+          width: 80px;
+          border: 1px solid #000;
+          border-radius: 50%;
+        }
+        .admin {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .role {
+          padding: 10px 10px;
+          opacity: 0.8;
+        }
+      }
+
+      .details {
+        .item {
+          border-top: 1px solid #000;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          .lable {
+            font-weight: 800;
+          }
+          .value {
+            color: rgb(120, 120, 255);
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 70%;
+      .title {
+        background-color: #ffffffd8;
+        box-sizing: border-box;
+        padding: 10px 0px;
+      }
+
+      .change {
+        padding: 5px;
+        border-left: 1px solid #000;
+        border-top: 1px solid #000;
+
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .item {
+          align-items: center;
+          color: black;
+          font-weight: 500;
+          display: flex;
+
+          .label {
+            width: 150px;
+          }
+          .text {
+            width: 100%;
+            height: 40px;
+          }
+        }
+      }
+      button {
+        margin-top: 20px;
+        padding: 5px 10px;
+        margin-left: 100px;
+        font-weight: bold;
+      }
+    }
+  }
+}
